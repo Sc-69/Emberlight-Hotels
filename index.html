@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Emberlight Hotels</title>
 </head>
 <body>
-    
+    <!--Header with the navbar-->
+    <header>
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#"> Rooms</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Booking form-->
+    <main>
+        <div class="hero-panel">
+        <form>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <br/>
+            <select name="location" id="location">
+                <option value="">Location</option>
+                <option value="turkey">Turkey</option>
+                <option value="egypt">Egypt</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="japan">Japan</option>
+                <option value="uk">United Kingdom</option>
+                <option value="germany">Germany</option>
+            </select><input type="date" name="date" id="date">
+            <br/>
+            <select name="number-of-people" id="number-of-people">
+                <option value="">Number of people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3+</option>
+            </select>
+            <button type="submit">Book your stay</button>
+        </form>
+    </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="col-1">
+        <h4>Around the world </h4>
+            <ul>
+                <li><a href="#">Emberlight in Netherlands</a></li>
+                <li><a href="#">Emberlight in Turkey</a></li>
+                <li><a href="#">Emberlight in the U.K.</a></li>
+                <li><a href="#">Emberlight in Japan</a></li>
+                <li><a href="#">Emberlight in Germany</a></li>
+                <li><a href="#">Emberlight in Egypt</a></li>
+            </ul>
+        </div>
+        <div class="col-2">
+        <h4>Find us on the internet</h4>
+            <ul>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h4>Emberlight</h4>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Our Rooms</a></li>
+                <li><a href="#">Data Protection</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
