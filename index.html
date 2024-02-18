@@ -7,18 +7,29 @@
     <title>Emberlight Hotels</title>
 </head>
 <body>
+    <div id="menu-overlay"></div>
     <!--Header with the navbar-->
     <header>
-        <div class="nav-wrapper">
+        <div id="nav-wrapper">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Hotels</a></li>
-                    <li><a href="#"> Rooms</a></li>
+                    <li><a href="#" id="test">Home</a></li>
+                    <li class="dropdown-wrapper"><a href="#" id="hotels">Hotels ↓</a>
+                        <nav id="dropdown-1">
+                            <ul>
+                                <li><a href="#">Turkey</a></li>
+                                <li><a href="#">Egypt</a></li>
+                                <li><a href="#">Japan</a></li>
+                                <li><a href="#">Netherlands</a></li>
+                                <li><a href="#">United Kingdom</a></li>
+                            </ul>
+                        </nav></li>
+                    <li><a href="#">Rooms</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -29,7 +40,7 @@
             <input type="text" name="name" id="name" placeholder="Your name" required>
             <br/>
             <select name="location" id="location">
-                <option value="">Location</option>
+                <option value="" disabled selected>Location</option>
                 <option value="turkey">Turkey</option>
                 <option value="egypt">Egypt</option>
                 <option value="netherlands">Netherlands</option>
@@ -44,6 +55,7 @@
                 <option value="2">2</option>
                 <option value="3">3+</option>
             </select>
+            <br/>
             <button type="submit">Book your stay</button>
         </form>
     </div>
@@ -51,6 +63,7 @@
 
     <!--Footer-->
     <footer>
+        <div class="footer-wrapper">
         <div class="col-1">
         <h4>Around the world </h4>
             <ul>
@@ -83,6 +96,36 @@
                 <li><a href="#">Data Protection</a></li>
             </ul>
         </div>
-    </footer>
+    </div>
+    <h6 class="copyright">© 2024 Emberlight Hotels. All rights reserved.</h4>
+</footer>
+<script>
+    let unselected = document.getElementById("hotels");
+    let dropdown = document.getElementById("dropdown-1");
+    let overlay = document.getElementById("menu-overlay")
+    let navbar = document.getElementById("nav-wrapper");
+    unselected.onclick = function(){
+        if(unselected.id === "hotels")
+        {
+            unselected.id = "hotels-selected";
+            dropdown.style.display = "flex";
+            overlay.id = "menu-overlay-on";
+            navbar.style.zIndex=3;
+
+        } else {
+            unselected.id="hotels";
+            dropdown.style.display = "none";
+            overlay.id = "";
+            navbar.style.zIndex=0;
+
+        }
+    }
+    overlay.onclick = function(){
+    overlay.id = "";
+    unselected.id="hotels";
+    dropdown.style.display = "none";
+    }   
+
+</script>
 </body>
 </html>
