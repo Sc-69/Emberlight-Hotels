@@ -12,11 +12,11 @@
     <header>
         <div id="nav-wrapper">
             <nav>
-                <ul>
+                <ul class="first-menu">
                     <li><a href="#" id="test">Home</a></li>
-                    <li class="dropdown-wrapper"><a href="#" id="hotels">Hotels ↓</a>
+                    <li><a href="#" id="hotels">Hotels ↓</a>
                         <nav id="dropdown-1">
-                            <ul>
+                            <ul class="secondary-menu">
                                 <li><a href="#">Turkey</a></li>
                                 <li><a href="#">Egypt</a></li>
                                 <li><a href="#">Japan</a></li>
@@ -113,7 +113,7 @@
         if(unselected.id === "hotels")
         {
             unselected.id = "hotels-selected";
-            dropdown.style.display = "block";
+            dropdown.style.display = "flex";
             overlay.id = "menu-overlay-on";
             navbar.style.zIndex=3;
 
