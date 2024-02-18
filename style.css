@@ -15,10 +15,7 @@ body{
 nav ul{
     list-style-type: none;
     background-color: rgb(83, 145, 136);
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
-    flex-direction: column;
 }
 
 nav ul li{
@@ -35,21 +32,21 @@ nav ul li{
     display: block;
     text-align: center;
 }
-nav li a:hover{
+
+#nav-wrapper ul li a:hover{
     background-color: rgb(59, 105, 98);
     color: white;
 }
-.dropdown-wrapper{
-    width: 100%;
-}
+
 #dropdown-1{
     display: none;
     position: absolute;
+    left: 0;
     z-index: 2;
+    width: 100%;
 }
 #dropdown-1 ul{ 
     background-color: rgb(255, 255, 255);
-    flex-direction: column;
 }
 #menu-overlay-on{
     position:fixed;
@@ -65,10 +62,10 @@ nav li a:hover{
     color:  rgb(83, 145, 136); 
 }
 
-.down-arrow{
-    color: white;
-}
 
+.logo-wrapper{
+    display: none;
+}
 .hero-panel{
     background: url(img/hotel-hero.jpg) no-repeat;
     height: 400px;
@@ -96,14 +93,16 @@ button{
     border-radius: 5px;
     margin: 10px 0;
 }
-form > input{
+form > input, select{
     cursor: pointer;
 }
+
 button:hover{
+    background-color: red;
     background-color: rgb(83, 145, 136);
     color: white;
-    cursor: pointer;
 }
+
 /*Gridbox .footer-wrapper*/
 .footer-wrapper{
     background-color: rgb(83, 145, 136);
@@ -144,15 +143,32 @@ footer{
 
  nav ul{
     flex-direction: row;
-
+    display: flex;
+    flex-wrap: wrap;
     
  }   
  nav ul li{
     border: none;
  }
 
+ #dropdown-1{
+    display: none;
+    flex-direction: row;
+    left: 0;
+}
+
+.logo-wrapper,.logo-wrapper img{
+    display: block;
+    margin: 15%;
+    width: 70%;
+}
+
 .hero-panel{
     min-height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+        
 }
  .footer-wrapper{
     display: grid;
@@ -162,6 +178,16 @@ footer{
     justify-items: center;
     line-height: 2em;
     padding-top: 20px;
+}
+.logo-wrapper, .form-wrapper{
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+.form-wrapper > *{
+    min-width: 100%;
+    width: 400px;
+    margin-right: 10%;
 }
 
 .footer-wrapper ul{

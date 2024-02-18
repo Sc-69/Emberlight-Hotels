@@ -36,28 +36,33 @@
     <!--Booking form-->
     <main>
         <div class="hero-panel">
-        <form>
-            <input type="text" name="name" id="name" placeholder="Your name" required>
-            <br/>
-            <select name="location" id="location">
-                <option value="" disabled selected>Location</option>
-                <option value="turkey">Turkey</option>
-                <option value="egypt">Egypt</option>
-                <option value="netherlands">Netherlands</option>
-                <option value="japan">Japan</option>
-                <option value="uk">United Kingdom</option>
-                <option value="germany">Germany</option>
-            </select><input type="date" name="date" id="date">
-            <br/>
-            <select name="number-of-people" id="number-of-people">
-                <option value="">Number of people</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3+</option>
-            </select>
-            <br/>
-            <button type="submit">Book your stay</button>
-        </form>
+        <div class="logo-wrapper">
+            <img src="img/logo.png" alt="Emberlight hotel logo">
+        </div>
+        <div class="form-wrapper">
+            <form>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+                <br/>
+                <select name="location" id="location">
+                    <option value="" disabled selected>Location</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="japan">Japan</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="germany">Germany</option>
+                </select><input type="date" name="date" id="date">
+                <br/>
+                <select name="number-of-people" id="number-of-people">
+                    <option value="">Number of people</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3+</option>
+                </select>
+                <br/>
+                <button type="submit">Book your stay</button>
+            </form>
+        </div>
     </div>
     </main>
 
@@ -108,7 +113,7 @@
         if(unselected.id === "hotels")
         {
             unselected.id = "hotels-selected";
-            dropdown.style.display = "flex";
+            dropdown.style.display = "block";
             overlay.id = "menu-overlay-on";
             navbar.style.zIndex=3;
 
