@@ -157,7 +157,13 @@ footer{
 
  #dropdown-1{
     display: none;
+    position: relative;
     left: 0;
+}
+.secondary-menu{
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
 }
 
 .logo-wrapper,.logo-wrapper img{
