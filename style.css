@@ -68,18 +68,16 @@ nav > ul.first-menu li{
     z-index: 1;
  }
 
- 
-
 .logo-wrapper{
     display: none;
 }
+
 .hero-panel{
-    background: url(img/hotel-hero.jpg) no-repeat;
+    background: linear-gradient(to left, rgba(207, 240, 238, 0.459),rgba(255, 255, 255, 0.432)), url(img/hotel-hero.jpg) no-repeat;
     height: 400px;
     background-position: center;
-    opacity: 50%;
-    position: center;
 }
+
 
 form{
     padding-top: 100px;

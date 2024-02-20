@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>Emberlight Hotels</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div id="nav-wrapper">
             <nav>
                 <ul class="first-menu">
-                    <li><a href="#" id="test">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#" id="hotels">Hotels ↓</a>
                         <nav id="dropdown-1">
                             <ul class="secondary-menu">
@@ -105,31 +106,7 @@
     <h6 class="copyright">© 2024 Emberlight Hotels. All rights reserved.</h4>
 </footer>
 <script>
-    let unselected = document.getElementById("hotels");
-    let dropdown = document.getElementById("dropdown-1");
-    let overlay = document.getElementById("menu-overlay")
-    let navbar = document.getElementById("nav-wrapper");
-    unselected.onclick = function(){
-        if(unselected.id === "hotels")
-        {
-            unselected.id = "hotels-selected";
-            dropdown.style.display = "flex";
-            overlay.id = "menu-overlay-on";
-            navbar.style.zIndex=3;
 
-        } else {
-            unselected.id="hotels";
-            dropdown.style.display = "none";
-            overlay.id = "";
-            navbar.style.zIndex=0;
-
-        }
-    }
-    overlay.onclick = function(){
-    overlay.id = "";
-    unselected.id="hotels";
-    dropdown.style.display = "none";
-    }   
 
 </script>
 </body>
