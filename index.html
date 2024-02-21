@@ -4,39 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <title>Emberlight Hotels</title>
 </head>
 <body>
-    <div id="menu-overlay"></div>
     <!--Header with the navbar-->
-    <header>
-        <div id="nav-wrapper">
-            <nav>
-                <ul class="first-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" id="hotels">Hotels ↓</a>
-                        <nav id="dropdown-1">
-                            <ul class="secondary-menu">
-                                <li><a href="#">Turkey</a></li>
-                                <li><a href="#">Egypt</a></li>
-                                <li><a href="#">Japan</a></li>
-                                <li><a href="#">Netherlands</a></li>
-                                <li><a href="#">United Kingdom</a></li>
-                            </ul>
-                        </nav></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
+        <nav id="nav-wrapper">
+            <ul class="first-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="hotels">Hotels ↓</a>
+                    <nav id="secondary-menu">
+                        <ul>
+                            <li><a href="#">Turkey</a></li>
+                            <li><a href="#">Egypt</a></li>
+                            <li><a href="#">Japan</a></li>
+                            <li><a href="#">Netherlands</a></li>
+                            <li><a href="#">United Kingdom</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
 
     <!--Booking form-->
     <main>
         <div class="hero-panel">
+        <h1 class="hotel-name">Emberlight</h1>
+        <img class="menu-icon" src="img/hamburger-menu.png" alt="">
         <div class="logo-wrapper">
             <img src="img/logo.png" alt="Emberlight hotel logo">
         </div>
@@ -105,9 +101,7 @@
     </div>
     <h6 class="copyright">© 2024 Emberlight Hotels. All rights reserved.</h4>
 </footer>
-<script>
 
-
-</script>
 </body>
+<script src="app.js"></script>
 </html>

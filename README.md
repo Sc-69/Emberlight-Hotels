@@ -9,3 +9,10 @@
  My goal is to focus on the navigation bar and the footer; with minimalistic content which might feature a booking form. I use mobile-first approach. I also created a functional dropdown menu.
 
 Takeaways: Practiced flexbox and grid layouts. I feel pretty comfortably styling pages using CSS. Also my CSS is becoming a lot cleaner. In comparison, I start to use shorter code to achieve the desired results.
+
+
+### UPDATE
+
+-Added a hamburger menu for smaller screens.
+-Refractored Javascript functions and separated them from the HTML.
+-Reworked the CSS and HTML a little, using class toggling for styling.
