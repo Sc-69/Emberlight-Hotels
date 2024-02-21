@@ -1,0 +1,47 @@
+.hero-panel{
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+.rooms{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+.hero-panel{
+    background-color: rgb(83, 145, 136); /*backup option for very small resolutions*/
+    height: auto;
+}
+
+.rooms li{
+    padding: 15px;
+}
+.rooms img{
+    margin: 0 auto;
+}
+
+.rooms img:hover{
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+@media screen and (min-width: 768px) {
+    
+h1{
+    padding-top: 150px;
+}
+
+.rooms{
+margin-top: 15%
+}
+.rooms li{
+    padding: 30px;
+}
+}

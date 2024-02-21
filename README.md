@@ -10,9 +10,14 @@
 
 Takeaways: Practiced flexbox and grid layouts. I feel pretty comfortably styling pages using CSS. Also my CSS is becoming a lot cleaner. In comparison, I start to use shorter code to achieve the desired results.
 
-
-### UPDATE
-
 -Added a hamburger menu for smaller screens.
 -Refractored Javascript functions and separated them from the HTML.
 -Reworked the CSS and HTML a little, using class toggling for styling.
+
+## UPDATE
+
+Started designing "Rooms" page where I wanted to practice async js by fetching API as well as pagination using only pure javascript.
+
+I completed the fundamental design of the page using the main CSS file as well as some additions; made an API call using JSONPlaceholder for some images; which I iterated through to create 5 list elements on the page.
+
+Todo: Add pagination. 

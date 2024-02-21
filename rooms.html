@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rooms.css">
+    <title>Our Rooms</title>
+</head>
+<body>
+     <!--Header with the navbar-->
+     <nav id="nav-wrapper">
+        <ul class="first-menu">
+            <li><a href="index.html" style="text-decoration: underline">Home</a></li>
+            <li><a href="#" id="hotels">Hotels ↓</a>
+                <nav id="secondary-menu">
+                    <ul>
+                        <li><a href="#">Turkey</a></li>
+                        <li><a href="#">Egypt</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Netherlands</a></li>
+                        <li><a href="#">United Kingdom</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="rooms.html" style="font-weight: bold; background-color: rgb(59, 105, 98)">Rooms</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <div class="hero-panel">
+        <h1 class="hotel-name">Emberlight</h1>
+        <img class="menu-icon" src="img/hamburger-menu.png" alt="">
+        <h1>We have a room for everyone</h1>
+        <ul class="rooms">
+        </ul>
+    </div>
+</main>
+
+<!--Footer-->
+<footer>
+    <div class="footer-wrapper">
+    <div class="col-1">
+    <h4>Around the world </h4>
+        <ul>
+            <li><a href="#">Emberlight in Netherlands</a></li>
+            <li><a href="#">Emberlight in Turkey</a></li>
+            <li><a href="#">Emberlight in the U.K.</a></li>
+            <li><a href="#">Emberlight in Japan</a></li>
+            <li><a href="#">Emberlight in Germany</a></li>
+            <li><a href="#">Emberlight in Egypt</a></li>
+        </ul>
+    </div>
+    <div class="col-2">
+    <h4>Find us on the internet</h4>
+        <ul>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </div>
+    <div class="col-3">
+        <h4>Emberlight</h4>
+        <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Our Rooms</a></li>
+            <li><a href="#">Data Protection</a></li>
+        </ul>
+    </div>
+</div>
+<h6 class="copyright">© 2024 Emberlight Hotels. All rights reserved.</h4>
+</footer>
+</body>
+<script src="fetchRooms.js"></script>
+<script src="app.js"></script>
+</html>
