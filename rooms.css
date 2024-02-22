@@ -3,6 +3,7 @@
 }
 
 h1{
+    display: block;
     text-align: center;
 }
 
@@ -19,17 +20,35 @@ h1{
     height: auto;
 }
 
-.rooms li{
-    padding: 15px;
-}
 .rooms img{
-    margin: 0 auto;
+    padding: 15px;
 }
 
 .rooms img:hover{
     cursor: pointer;
     position: relative;
     top: -10px;
+}
+
+.page-container{
+    text-align: center;
+}
+.pages{
+    padding: 0 20px;
+    display: inline;
+}
+.pages span{
+    margin: 0 5px;
+}
+
+button{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+button.active{
+background-color: rgb(83, 145, 136);
+color: white;
 }
 
 @media screen and (min-width: 768px) {

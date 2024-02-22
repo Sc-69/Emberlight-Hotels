@@ -58,7 +58,7 @@ body{
     position: absolute;
     right: 2%;
     z-index: 1;
-    top: 2%;
+    top: 0;
 }
 
 .company-name{
@@ -129,14 +129,14 @@ form input, select{
 button{
     font-size: 1.2em;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 8px 0;
+    border: none;
 }
 form > input, select, button, .menu-icon:hover{
     cursor: pointer;
 }
 
 button:hover{
-    background-color: red;
     background-color: rgb(83, 145, 136);
     color: white;
 }
