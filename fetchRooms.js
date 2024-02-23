@@ -85,7 +85,7 @@ fetchRooms()
         
         return showPage(imageArray, itemsPerPage, roomsDiv, currentPage);
         
-    }).then((data) =>{
+    }).then(() =>{
         return pagination(pagesDiv, itemsPerPage)
 
     }).catch(err =>{
