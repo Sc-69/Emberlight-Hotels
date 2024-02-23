@@ -16,8 +16,6 @@ let pagesDiv = document.querySelector(".page-container");
 let roomAmount = 28;
 let currentPage = 1;               
 let itemsPerPage = 5;
-let prevButton = document.querySelector("#prev");
-let nextButton = document.querySelector("#next");
 let imageArray = []; //empty array to store items from API call
 
 
