@@ -1,6 +1,6 @@
 # Emberlight Hotels
 
-## FrontEnd Development in HTML and CSS
+## FrontEnd Development in HTML and CSS and Javascript
 
 ### by Salim Ege Caliskan
 
