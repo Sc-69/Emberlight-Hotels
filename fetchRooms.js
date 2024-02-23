@@ -85,13 +85,10 @@ fetchRooms()
             imageArray.push(data[i].thumbnailUrl);  //here I get the thumbnailUrl from jsonplaceholder, and push them into an empty array
         }
         
-    }).then(() =>{
-
-        showPage(imageArray, itemsPerPage, roomsDiv, currentPage);
-
-    }).then(()=>{
-
-        pagination(pagesDiv, itemsPerPage)
+        return showPage(imageArray, itemsPerPage, roomsDiv, currentPage);
+        
+    }).then((data) =>{
+        return pagination(pagesDiv, itemsPerPage)
 
     }).catch(err =>{
         console.log(err);
